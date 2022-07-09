@@ -33,4 +33,5 @@ Part 5: Created Jenkins pipeline
    - Installed Jenkins on same EC2
    - Created the pipeline with following workflow
    - Code commit -->  Code Check out --> Code  testing --> Create new image --> Push new image to ECR -- > Deploy new image on EKS --> Curl test the url
+   - Jenkins pipeline url is http://184.72.123.94:8080/job/EKSdeployment/
        
