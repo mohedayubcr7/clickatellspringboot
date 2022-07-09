@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: springbootdocker-deployment
+  labels:
+    app: springbootdocker
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: springbootdocker
+  template:
+    metadata:
+      labels:
+        app: springbootdocker
+    spec:
+      containers:
+      - name: springbootdocker
+        image: 464600601937.dkr.ecr.us-east-1.amazonaws.com/ali-assignment-ecr 
+        stdin: true
+        tty: true
+        ports:
+        - containerPort: 8080
