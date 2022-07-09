@@ -29,7 +29,8 @@ Part 4: Deploy the image on AWS EKS
    - Tested the application running on EKS using http://ae66fddaee7c8439cb12bdd236bf5630-1527599045.us-east-1.elb.amazonaws.com/
  
 Part 5: Created Jenkins pipeline
-    - Installed Jenkins on same EC2
-    - Created the pipeline with following workflow
-    - Code commit -->  Code Check out --> Code  testing --> Create new image --> Push new image to ECR -- > Deploy new image on EKS --> Curl test the url
+
+   - Installed Jenkins on same EC2
+   - Created the pipeline with following workflow
+   - Code commit -->  Code Check out --> Code  testing --> Create new image --> Push new image to ECR -- > Deploy new image on EKS --> Curl test the url
        
